@@ -76,7 +76,7 @@ nav {
     border-radius: 8px;
     width: 150px;
     font-size: 16px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -108,7 +108,8 @@ nav {
     border-radius: 10px;
     padding: 20px;
 }
-.inspireVideo{
+
+.inspireVideo {
     margin-top: 10px;
 }
 
@@ -119,28 +120,28 @@ nav {
     width: 90%;
     margin: 0 auto;
     margin-top: 40px;
-    gap: 20px; /* Adjust the gap between the image and the text */
-    align-items: center; /* Aligns content vertically */
+    gap: 20px;
+    align-items: center;
 }
 
 /* Specific Styling for Image Alignment */
 .codingCard01 section, .codingCard03 section {
-    order: 1; /* Text appears first */
+    order: 1;
     flex: 1;
 }
 
 .codingCard01 div, .codingCard03 div {
-    order: 2; /* Image appears second */
+    order: 2;
     flex: 1;
 }
 
 .codingCard02 section {
-    order: 2; /* Text appears second */
+    order: 2;
     flex: 1;
 }
 
 .codingCard02 div {
-    order: 1; /* Image appears first */
+    order: 1;
     flex: 1;
 }
 
@@ -148,7 +149,7 @@ nav {
 .codingCard01 img, .codingCard02 img, .codingCard03 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional: adds a soft border radius */
+    border-radius: 8px;
 }
 
 .learnMoreButton {
@@ -161,9 +162,7 @@ nav {
     color: rgb(13, 19, 33);
     font-weight: 600;
     cursor: pointer;
-
 }
-
 
 /* Skills Section */
 .skils-container {
@@ -183,8 +182,7 @@ nav {
     box-sizing: border-box;
 }
 
-/* support styles */
-
+/* Support Styles */
 .supportBox {
     background-image: url("../images/handshake.jpg");
     border-radius: 16px;
@@ -221,14 +219,14 @@ nav {
 
 .inputContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .suggestBox {
-    width: 100%; /* Sets width to full container */
-    max-width: 400px; /* Sets a maximum width for larger screens */
+    width: 100%;
+    max-width: 400px;
     height: 57px;
     box-sizing: border-box;
     border: 1px solid rgba(13, 19, 33, 0.15);
@@ -236,7 +234,6 @@ nav {
     padding: 10px;
     background: rgb(255, 255, 255);
     color: black;
-    margin: 10px 0;
 }
 
 .buttonLast {
@@ -250,12 +247,10 @@ nav {
     font-weight: 600;
     padding: 8px;
     color: black;
-    margin-top: 10px;
     cursor: pointer;
 }
 
-/* footer style */
-
+/* Footer Styles */
 .footer {
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.03);
@@ -264,40 +259,40 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap; /* Wraps content within footer-content */
-    gap: 20px; /* Adds spacing between child elements */
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .copyright {
     margin: 0;
-    flex: 1; /* Allows it to take equal space */
-    text-align: left; /* Aligns text to the left */
-    font-size: 14px; /* Adjusts text size for better readability */
+    flex: 1;
+    text-align: left;
+    font-size: 14px;
 }
 
 .social-icons {
     display: flex;
     gap: 10px;
-    flex: 1; /* Allows it to take equal space */
-    justify-content: flex-end; /* Aligns icons to the right */
+    flex: 1;
+    justify-content: flex-end;
 }
 
 /* Icons with responsiveness */
 .social-icon {
     width: 24px;
     height: 24px;
-    transition: transform 0.2s ease; /* Adds hover effect */
+    transition: transform 0.2s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.1); /* Slightly enlarges icon on hover */
+    transform: scale(1.1);
 }
 
 /* Responsive Media Queries */
@@ -328,7 +323,8 @@ nav {
 
 @media (max-width: 480px) {
     .supportBox {
-        width: 95%; /* Full-width on smaller devices */
+        width: 95%;
+        padding: 15px;
     }
 
     .supportLine {
@@ -342,48 +338,29 @@ nav {
     }
 
     .suggestBox {
-        width: 100%; /* Ensures the input takes full width */
-        max-width: none; /* Removes max-width restriction */
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px; /* Adds space below the input box */
     }
 
     .buttonLast {
         width: 100%;
     }
-}
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column; /* Stacks items vertically */
-        padding: 15px;
-        align-items: flex-start; /* Aligns items to the start */
-    }
 
-    .footer-content {
-        flex-direction: column; /* Stacks footer content */
-        align-items: flex-start; /* Aligns to the left */
-        gap: 10px; /* Reduces gap for smaller screens */
-    }
-
-    .social-icons {
-        justify-content: flex-start; /* Aligns icons to the left */
-    }
-}
-
-/* Responsive adjustments for iPhones and small devices */
-@media (max-width: 480px) {
     .footer {
         padding: 10px;
     }
 
     .social-icon {
-        width: 20px; /* Reduces icon size */
+        width: 20px;
         height: 20px;
     }
 
     .copyright {
-        font-size: 12px; /* Adjusts font size for better fit */
+        font-size: 12px;
     }
 
     .social-icons {
-        gap: 5px; /* Reduces gap between icons */
+        gap: 5px;
     }
 }
