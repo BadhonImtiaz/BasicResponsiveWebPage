@@ -193,14 +193,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%; /* Allows the box to adjust its size */
-    width: 67%; /* Makes it responsive and centered */
-    height: auto; /* Adjusts height to keep the aspect ratio */
+    max-width: 100%;
+    width: 67%;
+    height: auto;
     padding: 20px;
-    margin: 40px auto; /* Centers the box horizontally */
+    margin: 40px auto;
     text-align: center;
+    flex-direction: column; /* Makes items stack vertically */
 }
-
 
 .supportLine {
     color: rgb(255, 255, 255);
@@ -223,10 +223,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Allows inputs to wrap on smaller screens */
 }
 
 .suggestBox {
-    width: 600px;
+    width: 90%; /* Adjusts width for smaller screens */
+    max-width: 600px; /* Limits the max width */
     height: 57px;
     box-sizing: border-box;
     border: 1px solid rgba(13, 19, 33, 0.15);
@@ -234,12 +236,12 @@ nav {
     padding: 10px;
     background: rgb(255, 255, 255);
     color: black;
-    margin-right: 10px;
-    margin-top: 30px;
+    margin: 10px 0;
 }
 
 .buttonLast {
-    width: 120px;
+    width: 100%;
+    max-width: 120px;
     height: 57px;
     border-radius: 8px;
     background: rgb(255, 255, 255);
@@ -248,9 +250,10 @@ nav {
     font-weight: 600;
     padding: 8px;
     color: black;
-    margin-top: 30px;
+    margin-top: 10px;
     cursor: pointer;
 }
+
 /* footer style */
 
 .footer {
@@ -303,5 +306,51 @@ nav {
     .footer {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .supportBox {
+        width: 90%; /* Adjusts for smaller screens */
+        padding: 15px;
+    }
+
+    .supportLine {
+        font-size: 28px; /* Scales font size down */
+        line-height: 32px;
+    }
+
+    .supportLineDetails {
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    .suggestBox {
+        width: 85%; /* Further adjusts width */
+    }
+
+    .buttonLast {
+        width: 100%;
+        max-width: 100px; /* Limits button width */
+    }
+}
+
+@media (max-width: 480px) {
+    .supportLine {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .supportLineDetails {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .suggestBox {
+        width: 100%;
+    }
+
+    .buttonLast {
+        width: 100%;
     }
 }
