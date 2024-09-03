@@ -264,26 +264,40 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap; /* Wraps content within footer-content */
+    gap: 20px; /* Adds spacing between child elements */
 }
 
 .copyright {
     margin: 0;
+    flex: 1; /* Allows it to take equal space */
+    text-align: left; /* Aligns text to the left */
+    font-size: 14px; /* Adjusts text size for better readability */
 }
 
 .social-icons {
     display: flex;
     gap: 10px;
+    flex: 1; /* Allows it to take equal space */
+    justify-content: flex-end; /* Aligns icons to the right */
 }
 
+/* Icons with responsiveness */
 .social-icon {
     width: 24px;
     height: 24px;
+    transition: transform 0.2s ease; /* Adds hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarges icon on hover */
 }
 
 /* Responsive Media Queries */
@@ -334,5 +348,42 @@ nav {
 
     .buttonLast {
         width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stacks items vertically */
+        padding: 15px;
+        align-items: flex-start; /* Aligns items to the start */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stacks footer content */
+        align-items: flex-start; /* Aligns to the left */
+        gap: 10px; /* Reduces gap for smaller screens */
+    }
+
+    .social-icons {
+        justify-content: flex-start; /* Aligns icons to the left */
+    }
+}
+
+/* Responsive adjustments for iPhones and small devices */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .social-icon {
+        width: 20px; /* Reduces icon size */
+        height: 20px;
+    }
+
+    .copyright {
+        font-size: 12px; /* Adjusts font size for better fit */
+    }
+
+    .social-icons {
+        gap: 5px; /* Reduces gap between icons */
     }
 }
