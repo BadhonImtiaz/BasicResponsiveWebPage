@@ -1,0 +1,307 @@
+/* Global Styles */
+.azeret-mono-normal {
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Navigation Styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.myName {
+    color: rgb(13, 19, 33);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.topButton {
+    border: 1px solid rgb(13, 19, 33);
+    border-radius: 5px;
+    opacity: 0.8;
+    padding: 10px;
+    background-color: white;
+    color: rgb(13, 19, 33);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Banner Styles */
+.firstBgImage {
+    background-image: url("/images/Hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bannerTitle {
+    color: rgb(13, 19, 33);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.bannerDescription {
+    color: rgb(13, 19, 33);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 80%;
+}
+
+.contactButton {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    width: 150px;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Section Styles */
+.development {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sctionTitle {
+    color: rgb(13, 19, 33);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.sectionDescription {
+    color: rgb(13, 19, 33);
+    font-size: 1rem;
+    opacity: 0.7;
+    max-width: 80%;
+}
+
+.sectionBg {
+    background-color: rgba(13, 19, 33, 0.02);
+    border-radius: 10px;
+    padding: 20px;
+}
+.inspireVideo{
+    margin-top: 10px;
+}
+
+/* Coding Cards Styles */
+.codingCard01, .codingCard02, .codingCard03 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 20px; /* Adjust the gap between the image and the text */
+    align-items: center; /* Aligns content vertically */
+}
+
+/* Specific Styling for Image Alignment */
+.codingCard01 section, .codingCard03 section {
+    order: 1; /* Text appears first */
+    flex: 1;
+}
+
+.codingCard01 div, .codingCard03 div {
+    order: 2; /* Image appears second */
+    flex: 1;
+}
+
+.codingCard02 section {
+    order: 2; /* Text appears second */
+    flex: 1;
+}
+
+.codingCard02 div {
+    order: 1; /* Image appears first */
+    flex: 1;
+}
+
+/* Styling the Images */
+.codingCard01 img, .codingCard02 img, .codingCard03 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds a soft border radius */
+}
+
+.learnMoreButton {
+    box-sizing: border-box;
+    border: 1px solid rgb(13, 19, 33);
+    opacity: 0.8;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: white;
+    color: rgb(13, 19, 33);
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+
+/* Skills Section */
+.skils-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill-html, .skill-css, .skill-javascript {
+    background: rgba(255, 76, 30, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+/* support styles */
+
+.supportBox {
+    background-image: url("../images/handshake.jpg");
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Allows the box to adjust its size */
+    width: 67%; /* Makes it responsive and centered */
+    height: auto; /* Adjusts height to keep the aspect ratio */
+    padding: 20px;
+    margin: 40px auto; /* Centers the box horizontally */
+    text-align: center;
+}
+
+
+.supportLine {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.supportLineDetails {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestBox {
+    width: 600px;
+    height: 57px;
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    color: black;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.buttonLast {
+    width: 120px;
+    height: 57px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    color: black;
+    margin-top: 30px;
+    cursor: pointer;
+}
+/* footer style */
+
+.footer {
+    border-radius: 16px;
+    background: rgba(13, 19, 33, 0.03);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.copyright {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bannerTitle {
+        font-size: 1.8rem;
+    }
+
+    .codingCard01, .codingCard02, .codingCard03 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
